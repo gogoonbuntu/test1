@@ -14,21 +14,21 @@ function App() {
     let titleList = ['제목1', '제목2', '제목3'];
 
     return (<div className="App" >
-        <div onClick={counter} > 왜그래 < /div>  <
-        div > {clicker} < /div>  <
-        ListNode lists={titleList} >
-                <
-        /ListNode> < /
-        div >
+        <div onClick={counter} > 왜그래
+        </div>
+        <div > {clicker} </div>
+            <ListNode lists={titleList}>
+            </ListNode> 
+        </div>
     );
 }
 
 function ListNode() {
     return (
         <>
-                    <div className="listnode" > {this.props.lists[0]}
-                    </div>
-                </>
+            <div className="listnode" > {this.props.lists[0]}
+            </div>
+        </>
     )
 }
 
